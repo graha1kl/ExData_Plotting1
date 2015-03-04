@@ -19,9 +19,8 @@ powerData <- read.csv("household_power_consumption.txt", skip=66637, nrows=2880,
 names(powerData) <- names(read.csv("household_power_consumption.txt", nrows=1, 
                                      sep=";"))
 
-# Convert time and date variables to classes.
+# Convert date variable to date class.
 
-powerData$Time <- strptime(powerData$Time, format="%H:%M:%S")
 powerData$Date <- as.Date(powerData$Date, format="%d/%m/%Y")
 
 # Create and save plot 1
