@@ -28,6 +28,6 @@ powerData$DateTime <- strptime(paste(powerData$Date, powerData$Time),
 
 png(filename="plot2.png", width=480, height=480, bg="transparent")
 with(powerData, plot(DateTime, Global_active_power, type="l", xlab="",
-                     ylab="Global Active Power(kilowatts)"))
+                     ylab="Global Active Power (kilowatts)"))
 dev.off()
 
