@@ -25,8 +25,8 @@ powerData$Date <- as.Date(powerData$Date, format="%d/%m/%Y")
 
 # Create and save plot 1
 
-png(filename="plot1.png", width=480, height=480)
-with(powerData, hist(Global_active_power, col="red", xlab="Global Active Power (kilowatts)", 
-                     ylab="Frequency", main="Global Active Power"))
+png(filename="plot1.png", width=480, height=480, bg="transparent")
+with(powerData, hist(Global_active_power, col="red", xlab="Global Active Power (kilowatts)",
+                     main="Global Active Power"))
 dev.off()
 
